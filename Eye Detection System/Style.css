@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #eef2f3;
+  }
+
+  header {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 4 / 3;
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  video,
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #statusBox {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(100% - 2rem);
+    max-width: 640px;
+  }
+
+          /* Alert Modal Styling */
+          .alert-modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        z-index: 1000;
+        width: 90%;
+        max-width: 400px;
+        font-family: 'Roboto', Arial, sans-serif;
+      }
+
+      .alert-modal h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #333;
+      }
+
+      .alert-modal p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        color: #555;
+      }
+
+      .alert-modal button {
+        background-color: #007bff;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .alert-modal button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Overlay for Alert */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+
+
+  #stats {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 2rem);
+    max-width: 640px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      padding: 0.8rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    #statusBox,
+    #stats {
+      font-size: 1rem;
+    }
+  }
+
